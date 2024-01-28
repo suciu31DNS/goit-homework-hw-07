@@ -244,16 +244,18 @@ h2 {
 .header-content {
   display: flex;
   align-items: center;
+
   /* border-bottom: 1px solid #e7e9fc; */
   height: 70px;
 
 }
 
 .header-navigation {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   padding-left: 16px;
   /* padding-top: 25px; */
+  /* gap: 249px; */
 }
 
 
@@ -908,11 +910,103 @@ h2 {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+} */
+
+.menu-content {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  */
+  /* transform: translate(-50%, -50%) scale(1); */
+  width: 200px;
+  height: 786px;
+  background: #fcfcfc;
+}
+
+.menu-close-button {
+  border: none;
+  background: none;
+}
+
+.burger-contact-tel {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.111%;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.burger-contact-email {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  padding-top: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  padding: 24px;
+}
+
+.button-meniu {
+  display: flex;
+  justify-content: end;
+}
+
+.burger-meniu {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.111%;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.burger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 0 0 40px;
+}
+
+.burger-list-contacts {
+  margin: 0;
+}
+
+.burger-media {
+  gap: 56px;
+  margin: 0;
+}
+
+.adress-social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 284px;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
+
 
 .modal-content {
   position: absolute;
@@ -1114,8 +1208,20 @@ h2 {
   flex-direction: column;
   gap: 72px;
 
+}
+
+.meniu-button {
+  border: none;
+  background: none;
+  cursor: pointer;
 
 }
+
+
+
+
+
+
 
 @media screen and (width >=768px) {
   :root {
@@ -1248,6 +1354,10 @@ h2 {
     align-content: center;
     padding: 100px;
 
+  }
+
+  .meniu-button {
+    display: none;
   }
 }
 
@@ -1394,6 +1504,12 @@ h2 {
   .nav-section-list {
     justify-content: center;
   }
+
+  .meniu-button {
+    display: none;
+  }
+
+
 
 
 
