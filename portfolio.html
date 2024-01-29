@@ -20,37 +20,45 @@
 <body>
   <!--Top line-->
   <header class="header">
-    <div class="header-content container">
-      <div class="header-navigation">
+    <div class="header-content">
+      <nav class="header-navigation">
         <a class="logo link" href="./index.html">Web<span class="logo-studio-dark">Studio</span></a>
-
-        <ul class="navigation-list list general-list">
-          <li class="navigation-link">
-            <a class="list link list-links" href="./index.html" target="_blank">Studio</a>
-          </li>
-          <li class="navigation-link">
-            <a class="list link list-links" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="navigation-link">
-            <a class="list link list-links" href="">Contacts</a>
-          </li>
-        </ul>
-
-
-        </nav>
-        <div class="navigation-and-address-hide">
-          <address class="adress-section">
-            <ul class="address-list list general-list">
-              <li>
-                <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
-              </li>
-            </ul>
-          </address>
+        <div class="button-meniu">
+          <button data-menu-open class="meniu-button" type="button">
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/symbol.svg#icon-menu">
+              </use>
+            </svg>
+          </button>
         </div>
+
+        <div class="navigation-and-address-hide">
+          <ul class="navigation-list general-list list ">
+            <li class="navigation-link ">
+              <a class="list link list-links" href="./index.html" target="_blank">Studio</a>
+            </li>
+            <li class="navigation-link">
+              <a class="list link list-links" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation-link">
+              <a class="list link list-links" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="navigation-and-address-hide">
+        <address class="adress-section">
+          <ul class="address-list list general-list">
+            <li>
+              <a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
       </div>
+    </div>
   </header>
 
 
@@ -282,6 +290,68 @@
     </div>
 
   </footer>
+
+  <div class="menu-container is-hidden" data-menu>
+    <div class="menu-content">
+      <div class="button-container">
+        <button class="menu-close-button" type="button" data-menu-close>
+          <svg class="" width="24" height="24">
+            <use href="./images/symbol.svg#icon-close">
+            </use>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul class="general-list list burger-list ">
+          <li class="navigation-link ">
+            <a class="link list-links burger-meniu" href="./index.html" target="_blank">Studio</a>
+          </li>
+          <li class="navigation-link">
+            <a class="link list-links burger-meniu" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation-link">
+            <a class="link list-links burger-meniu" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="adress-social-media">
+        <address class="">
+          <ul class="address-list list general-list burger-list-contacts">
+            <li>
+              <a class="link contacts burger-contact-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="link contacts burger-contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+
+          </ul>
+        </address>
+        <ul class="social-media-list general-list burger-media">
+          <li class="social-media-element"><a class="social-media-link" href="">
+              <svg class="social-media-logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram" />
+              </svg>
+            </a></li>
+          <li class="social-media-element"><a class="social-media-link" href="">
+              <svg class="social-media-logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook" />
+              </svg>
+            </a></li>
+          <li class="social-media-element"><a class="social-media-link" href="">
+              <svg class="social-media-logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter" />
+              </svg>
+            </a></li>
+          <li class="social-media-element"><a class="social-media-link" href="">
+              <svg class="social-media-logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin" />
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 

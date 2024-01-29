@@ -151,6 +151,7 @@ h2 {
 .adress-section {
   font-style: normal;
   display: flex;
+  align-items: center;
 
 }
 
@@ -205,26 +206,32 @@ h2 {
   padding: 0;
 }
 
+.list-links:hover {
+  color: var(--focus-hover-color);
+}
 
-.list-links {
+.list-links:focus {
+  color: var(--focus-hover-color);
+}
+
+/* .list-links {
   position: relative;
   color: var(--focus-hover-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.list-links::after {
+/* .list-links::after {
   /* TODO functionality */
-  content: "";
-  position: absolute;
-
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: var(--focus-hover-color);
-  border-radius: 2px;
+content: "";
+position: absolute;
+left: 0;
+bottom: -1px;
+height: 4px;
+background-color: var(--focus-hover-color);
+border-radius: 2px;
 }
 
-.list-links:hover,
+*/ .list-links:hover,
 .list-links:focus,
 .list-links:active {
 
@@ -239,23 +246,31 @@ h2 {
 /* header-section */
 .header {
   /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
+
+
 }
 
 .header-content {
-  display: flex;
+  /* display: flex;
   align-items: center;
-
+  flex-direction: column; */
+  /* justify-content: space-evenly; */
   /* border-bottom: 1px solid #e7e9fc; */
-  height: 70px;
+  /* height: 70px; */
+}
 
+
+.button-meniu {
+  display: flex;
+  align-items: end;
 }
 
 .header-navigation {
   display: flex;
+  padding: 0 16px;
+  height: 70px;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 16px;
-  /* padding-top: 25px; */
-  /* gap: 249px; */
 }
 
 
@@ -962,10 +977,7 @@ h2 {
   padding: 24px;
 }
 
-.button-meniu {
-  display: flex;
-  justify-content: end;
-}
+
 
 .burger-meniu {
   font-size: 36px;
@@ -1147,12 +1159,20 @@ h2 {
   margin: 0 24px 24px 24px;
 }
 
-.check-box-input {
-  /* visibility: hidden; */
-  accent-color: red;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(1005);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.check-box-input:checked+.terms-conditions span:first-child {
+.check-box-input:checked+.terms-conditions .terms-conditions-span {
   border: none;
   background-color: var(--focus-hover-color);
   fill: var(--nu-color);
