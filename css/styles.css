@@ -263,8 +263,6 @@ border-radius: 2px;
 .button-meniu {
   display: flex;
   align-items: end;
-  animation: none;
-  transform: none;
 }
 
 .header-navigation {
