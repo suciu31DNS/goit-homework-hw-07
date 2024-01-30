@@ -946,15 +946,14 @@ border-radius: 2px;
 
 .menu-content {
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   */
   /* transform: translate(-50%, -50%) scale(1); */
-  width: 200px;
-  height: 786px;
+  width: 100vw;
+  height: 100vh;
   background: #fcfcfc;
 }
 
