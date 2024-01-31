@@ -1262,6 +1262,7 @@ border-radius: 2px;
 
   .logo {
     text-align: start;
+    margin-left: 16px;
   }
 
   .address-list {
@@ -1271,13 +1272,18 @@ border-radius: 2px;
   }
 
   .navigation-list {
-    padding: 120px;
     display: flex;
+    justify-content: center;
     gap: 40px;
+    margin: 0;
   }
 
   .nav-section-list {
     justify-content: center;
+  }
+
+  .header {
+    max-width: 768px;
   }
 
   .header-content {
@@ -1289,6 +1295,8 @@ border-radius: 2px;
 
   .header-navigation {
     display: flex;
+    padding: 0;
+    gap: 76px;
   }
 
   .title-container {
@@ -1413,6 +1421,11 @@ border-radius: 2px;
 
   }
 
+  .section-description {
+    margin: 120px 0;
+    max-width: 1158px;
+  }
+
   .section-description-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -1434,7 +1447,7 @@ border-radius: 2px;
   }
 
   .logo {
-    margin-right: 76px;
+    /* margin-right: 76px; */
   }
 
   .general-list {
@@ -1444,7 +1457,7 @@ border-radius: 2px;
   }
 
   .address-list {
-    margin-left: 332px;
+    margin-right: 156px;
 
   }
 
@@ -1484,7 +1497,7 @@ border-radius: 2px;
   .test {
     flex-wrap: unset;
     padding: 0;
-    margin: 120px 0;
+
   }
 
   .order-button {
@@ -1565,12 +1578,10 @@ border-radius: 2px;
     gap: 120px;
   }
 
-  /* .customers-list {
-    padding: 120px;
-  } */
 
   .description-list {
     gap: 24px;
+    margin: 0;
 
   }
 
@@ -1578,7 +1589,7 @@ border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1158px;
+
   }
 
   .social-media-footer {
